@@ -2,9 +2,22 @@ profiles*.yml
 **/profiles*.yml
 target/
 dbt_packages/
-logs/
 .env
 *.pyc
+*.py[oc]
 __pycache__/
 .DS_Store
 .venv/
+build/
+dist/
+wheels/
+*.egg-info
+
+# Airflow Operational State Isolations
+airflow_pipeline/airflow.db
+airflow_pipeline/airflow-webserver.pid
+airflow_pipeline/logs/
+airflow_pipeline/webserver_config.py
+airflow_pipeline/airflow.cfg
+pico.save
+
