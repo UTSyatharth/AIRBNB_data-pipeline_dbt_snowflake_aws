@@ -102,4 +102,8 @@ This project was built to practice the core skills expected of an analytics engi
 
 ## Acknowledgements
 
+<<<<<<< HEAD
 Built while following an end-to-end data engineering tutorial covering Snowflake, dbt, and AWS, then extended with personal modifications and additional documentation.
+=======
+Built while following an end-to-end data engineering tutorial covering Snowflake, dbt, and AWS, then extended with personal modifications and additional documentation.
+>>>>>>> 4d5e139f14180a5d1f454ae6a54a5c5f6d2f1cbf
