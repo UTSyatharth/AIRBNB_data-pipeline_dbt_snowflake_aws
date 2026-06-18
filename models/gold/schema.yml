@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fact
+    description: >
+      Gold-layer fact table built using a metadata-driven join pattern.
+      Combines the one-big-table (OBT) containing booking, pricing, and
+      listing attributes with the host and listing dimension tables via
+      a Jinja-templated loop, producing a fully joined, analysis-ready
+      dataset for downstream BI consumption.
+    columns:
+      - name: booking_id
+        description: "Unique identifier for each booking transaction."
+      - name: listing_id
+        description: "Foreign key referencing the listing dimension."
+      - name: host_id
+        description: "Foreign key referencing the host dimension."
+      - name: total_amount
+        description: "Total booking amount charged to the guest."
+      - name: service_fee
+        description: "Platform service fee applied to the booking."
+      - name: cleaning_fee
+        description: "Cleaning fee applied to the booking."
+      - name: accommodates
+        description: "Maximum number of guests the listing accommodates."
+      - name: price_per_night
+        description: "Nightly rate for the listing at time of booking."
+      - name: bedrooms
+        description: "Number of bedrooms in the listing."
+      - name: bathrooms
+        description: "Number of bathrooms in the listing."
+      - name: response_rate
+        description: "Host's response rate to booking inquiries."
+      - name: response_rate_quality
+        description: "Categorized quality tier derived from the host's response rate."
+
+  - name: obt
+    description: >
+      One-big-table model combining booking transactions with relevant
+      listing and pricing attributes, serving as the primary input to
+      the fact model's join logic.
