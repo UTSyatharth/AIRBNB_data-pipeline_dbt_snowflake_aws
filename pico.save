@@ -1,5 +1,4 @@
-profiles*.yml
-**/profiles*.yml
+profiles.yml
 target/
 dbt_packages/
 logs/
@@ -7,4 +6,3 @@ logs/
 *.pyc
 __pycache__/
 .DS_Store
-.venv/

@@ -100,6 +100,13 @@ aws_dbt_snowflake_project/
 
 This project was built to practice the core skills expected of an analytics engineer / data engineer working with modern cloud data stacks: cloud storage integration, warehouse modeling, incremental processing, dimensional modeling, historical change tracking, and automated testing — the same patterns used in production data platforms at most mid-to-large Australian enterprises currently migrating to cloud-native data stacks.
 
+
 ## Acknowledgements
 
 Built while following an end-to-end data engineering tutorial covering Snowflake, dbt, and AWS, then extended with personal modifications and additional documentation.
+=======
+
+## Acknowledgements
+
+Built while following an end-to-end data engineering tutorial covering Snowflake, dbt, and AWS, then extended with personal modifications and additional documentation.
+>>>>>>> 7eb6ac9 (feat: implement clean automated airflow orchestration with daily cadences and webhook alerts)

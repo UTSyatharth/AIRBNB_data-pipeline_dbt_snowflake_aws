@@ -1,12 +1,13 @@
 version: 2
-
 sources:
   - name: staging
     database: AIRBNB
-    schema: staging  
+    schema: staging
+    description: "Raw Airbnb data staged from AWS S3 via Snowflake external stage, before any transformation."
     tables:
       - name: listings
+        description: "Raw listing records including property details, pricing, and host references, as ingested from source."
       - name: bookings
+        description: "Raw booking transaction records including dates, guest counts, and pricing, as ingested from source."
       - name: hosts
-
-
+        description: "Raw host profile records including host identifiers and metadata, as ingested from source."

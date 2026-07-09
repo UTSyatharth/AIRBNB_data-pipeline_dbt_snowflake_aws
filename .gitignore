@@ -20,4 +20,3 @@ airflow_pipeline/logs/
 airflow_pipeline/webserver_config.py
 airflow_pipeline/airflow.cfg
 pico.save
-
